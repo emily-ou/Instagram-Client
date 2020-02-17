@@ -1,0 +1,6 @@
+framework module Pods_InstantHamTests {
+  umbrella header "Pods-InstantHamTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0419C60BF2189742727F0611 /* Pods_InstantHamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E21A544B05DFE28A650D94 /* Pods_InstantHamTests.framework */; };
+		99CA13A22434895430353D94 /* Pods_InstantHam_InstantHamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02EEBA941AA86E062AA328A /* Pods_InstantHam_InstantHamUITests.framework */; };
+		B8BBD50B23FB314B005ACD8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBD50A23FB314B005ACD8A /* AppDelegate.swift */; };
+		B8BBD50D23FB314B005ACD8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBD50C23FB314B005ACD8A /* SceneDelegate.swift */; };
+		B8BBD50F23FB314B005ACD8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBD50E23FB314B005ACD8A /* ViewController.swift */; };
+		B8BBD51223FB314B005ACD8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8BBD51023FB314B005ACD8A /* Main.storyboard */; };
+		B8BBD51423FB317A005ACD8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BBD51323FB317A005ACD8A /* Assets.xcassets */; };
+		B8BBD51723FB317A005ACD8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8BBD51523FB317A005ACD8A /* LaunchScreen.storyboard */; };
+		B8BBD52223FB317C005ACD8A /* InstantHamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBD52123FB317C005ACD8A /* InstantHamTests.swift */; };
+		B8BBD52D23FB317C005ACD8A /* InstantHamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBD52C23FB317C005ACD8A /* InstantHamUITests.swift */; };
+		DE57EA36ABB6BD8604489380 /* Pods_InstantHam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BD94C42DA457AF731F4EB6 /* Pods_InstantHam.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8BBD51E23FB317C005ACD8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8BBD4FF23FB314B005ACD8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8BBD50623FB314B005ACD8A;
+			remoteInfo = InstantHam;
+		};
+		B8BBD52923FB317C005ACD8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8BBD4FF23FB314B005ACD8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8BBD50623FB314B005ACD8A;
+			remoteInfo = InstantHam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1981DF3B254E9F4B97029973 /* Pods-InstantHam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantHam.debug.xcconfig"; path = "Target Support Files/Pods-InstantHam/Pods-InstantHam.debug.xcconfig"; sourceTree = "<group>"; };
+		286DADE322544469B78B7537 /* Pods-InstantHam-InstantHamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantHam-InstantHamUITests.release.xcconfig"; path = "Target Support Files/Pods-InstantHam-InstantHamUITests/Pods-InstantHam-InstantHamUITests.release.xcconfig"; sourceTree = "<group>"; };
+		30E21A544B05DFE28A650D94 /* Pods_InstantHamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstantHamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51B8897D7BC2175D2BD1205A /* Pods-InstantHam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantHam.release.xcconfig"; path = "Target Support Files/Pods-InstantHam/Pods-InstantHam.release.xcconfig"; sourceTree = "<group>"; };
+		51EB4A16569FD7F3E867BB50 /* Pods-InstantHam-InstantHamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantHam-InstantHamUITests.debug.xcconfig"; path = "Target Support Files/Pods-InstantHam-InstantHamUITests/Pods-InstantHam-InstantHamUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AE354033297485AB71542EB /* Pods-InstantHamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantHamTests.debug.xcconfig"; path = "Target Support Files/Pods-InstantHamTests/Pods-InstantHamTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B8BBD50723FB314B005ACD8A /* InstantHam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstantHam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8BBD50A23FB314B005ACD8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8BBD50C23FB314B005ACD8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B8BBD50E23FB314B005ACD8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8BBD51123FB314B005ACD8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8BBD51323FB317A005ACD8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8BBD51623FB317A005ACD8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8BBD51823FB317A005ACD8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8BBD51D23FB317C005ACD8A /* InstantHamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantHamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8BBD52123FB317C005ACD8A /* InstantHamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantHamTests.swift; sourceTree = "<group>"; };
+		B8BBD52323FB317C005ACD8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8BBD52823FB317C005ACD8A /* InstantHamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantHamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8BBD52C23FB317C005ACD8A /* InstantHamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantHamUITests.swift; sourceTree = "<group>"; };
+		B8BBD52E23FB317C005ACD8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C02EEBA941AA86E062AA328A /* Pods_InstantHam_InstantHamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstantHam_InstantHamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BD94C42DA457AF731F4EB6 /* Pods_InstantHam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstantHam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC8AFA1DEBC1488E024C1B31 /* Pods-InstantHamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantHamTests.release.xcconfig"; path = "Target Support Files/Pods-InstantHamTests/Pods-InstantHamTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8BBD50423FB314B005ACD8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE57EA36ABB6BD8604489380 /* Pods_InstantHam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8BBD51A23FB317C005ACD8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0419C60BF2189742727F0611 /* Pods_InstantHamTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8BBD52523FB317C005ACD8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CA13A22434895430353D94 /* Pods_InstantHam_InstantHamUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54DEC934B1D665E0508BFEED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1981DF3B254E9F4B97029973 /* Pods-InstantHam.debug.xcconfig */,
+				51B8897D7BC2175D2BD1205A /* Pods-InstantHam.release.xcconfig */,
+				51EB4A16569FD7F3E867BB50 /* Pods-InstantHam-InstantHamUITests.debug.xcconfig */,
+				286DADE322544469B78B7537 /* Pods-InstantHam-InstantHamUITests.release.xcconfig */,
+				5AE354033297485AB71542EB /* Pods-InstantHamTests.debug.xcconfig */,
+				FC8AFA1DEBC1488E024C1B31 /* Pods-InstantHamTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8BBD4FE23FB314A005ACD8A = {
+			isa = PBXGroup;
+			children = (
+				B8BBD50923FB314B005ACD8A /* InstantHam */,
+				B8BBD52023FB317C005ACD8A /* InstantHamTests */,
+				B8BBD52B23FB317C005ACD8A /* InstantHamUITests */,
+				B8BBD50823FB314B005ACD8A /* Products */,
+				54DEC934B1D665E0508BFEED /* Pods */,
+				E95B4753F84E3494EEB520D9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B8BBD50823FB314B005ACD8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8BBD50723FB314B005ACD8A /* InstantHam.app */,
+				B8BBD51D23FB317C005ACD8A /* InstantHamTests.xctest */,
+				B8BBD52823FB317C005ACD8A /* InstantHamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8BBD50923FB314B005ACD8A /* InstantHam */ = {
+			isa = PBXGroup;
+			children = (
+				B8BBD50A23FB314B005ACD8A /* AppDelegate.swift */,
+				B8BBD50C23FB314B005ACD8A /* SceneDelegate.swift */,
+				B8BBD50E23FB314B005ACD8A /* ViewController.swift */,
+				B8BBD51023FB314B005ACD8A /* Main.storyboard */,
+				B8BBD51323FB317A005ACD8A /* Assets.xcassets */,
+				B8BBD51523FB317A005ACD8A /* LaunchScreen.storyboard */,
+				B8BBD51823FB317A005ACD8A /* Info.plist */,
+			);
+			path = InstantHam;
+			sourceTree = "<group>";
+		};
+		B8BBD52023FB317C005ACD8A /* InstantHamTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8BBD52123FB317C005ACD8A /* InstantHamTests.swift */,
+				B8BBD52323FB317C005ACD8A /* Info.plist */,
+			);
+			path = InstantHamTests;
+			sourceTree = "<group>";
+		};
+		B8BBD52B23FB317C005ACD8A /* InstantHamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B8BBD52C23FB317C005ACD8A /* InstantHamUITests.swift */,
+				B8BBD52E23FB317C005ACD8A /* Info.plist */,
+			);
+			path = InstantHamUITests;
+			sourceTree = "<group>";
+		};
+		E95B4753F84E3494EEB520D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4BD94C42DA457AF731F4EB6 /* Pods_InstantHam.framework */,
+				C02EEBA941AA86E062AA328A /* Pods_InstantHam_InstantHamUITests.framework */,
+				30E21A544B05DFE28A650D94 /* Pods_InstantHamTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8BBD50623FB314B005ACD8A /* InstantHam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8BBD53123FB317C005ACD8A /* Build configuration list for PBXNativeTarget "InstantHam" */;
+			buildPhases = (
+				4C95C9B754CF5FA5E8521B5D /* [CP] Check Pods Manifest.lock */,
+				B8BBD50323FB314B005ACD8A /* Sources */,
+				B8BBD50423FB314B005ACD8A /* Frameworks */,
+				B8BBD50523FB314B005ACD8A /* Resources */,
+				D1C294E490B134CA2BB156DB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstantHam;
+			productName = InstantHam;
+			productReference = B8BBD50723FB314B005ACD8A /* InstantHam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8BBD51C23FB317C005ACD8A /* InstantHamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8BBD53423FB317C005ACD8A /* Build configuration list for PBXNativeTarget "InstantHamTests" */;
+			buildPhases = (
+				819BF508A2C1D15BA5F8048E /* [CP] Check Pods Manifest.lock */,
+				B8BBD51923FB317C005ACD8A /* Sources */,
+				B8BBD51A23FB317C005ACD8A /* Frameworks */,
+				B8BBD51B23FB317C005ACD8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8BBD51F23FB317C005ACD8A /* PBXTargetDependency */,
+			);
+			name = InstantHamTests;
+			productName = InstantHamTests;
+			productReference = B8BBD51D23FB317C005ACD8A /* InstantHamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B8BBD52723FB317C005ACD8A /* InstantHamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8BBD53723FB317C005ACD8A /* Build configuration list for PBXNativeTarget "InstantHamUITests" */;
+			buildPhases = (
+				B093177FCD2AAC1FC1D93A5A /* [CP] Check Pods Manifest.lock */,
+				B8BBD52423FB317C005ACD8A /* Sources */,
+				B8BBD52523FB317C005ACD8A /* Frameworks */,
+				B8BBD52623FB317C005ACD8A /* Resources */,
+				B39FA70E4823AEA4B2A1FF8B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8BBD52A23FB317C005ACD8A /* PBXTargetDependency */,
+			);
+			name = InstantHamUITests;
+			productName = InstantHamUITests;
+			productReference = B8BBD52823FB317C005ACD8A /* InstantHamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8BBD4FF23FB314B005ACD8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Emily Ou";
+				TargetAttributes = {
+					B8BBD50623FB314B005ACD8A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					B8BBD51C23FB317C005ACD8A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = B8BBD50623FB314B005ACD8A;
+					};
+					B8BBD52723FB317C005ACD8A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = B8BBD50623FB314B005ACD8A;
+					};
+				};
+			};
+			buildConfigurationList = B8BBD50223FB314B005ACD8A /* Build configuration list for PBXProject "InstantHam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8BBD4FE23FB314A005ACD8A;
+			productRefGroup = B8BBD50823FB314B005ACD8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8BBD50623FB314B005ACD8A /* InstantHam */,
+				B8BBD51C23FB317C005ACD8A /* InstantHamTests */,
+				B8BBD52723FB317C005ACD8A /* InstantHamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8BBD50523FB314B005ACD8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8BBD51723FB317A005ACD8A /* LaunchScreen.storyboard in Resources */,
+				B8BBD51423FB317A005ACD8A /* Assets.xcassets in Resources */,
+				B8BBD51223FB314B005ACD8A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8BBD51B23FB317C005ACD8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8BBD52623FB317C005ACD8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C95C9B754CF5FA5E8521B5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstantHam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		819BF508A2C1D15BA5F8048E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstantHamTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B093177FCD2AAC1FC1D93A5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstantHam-InstantHamUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B39FA70E4823AEA4B2A1FF8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstantHam-InstantHamUITests/Pods-InstantHam-InstantHamUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstantHam-InstantHamUITests/Pods-InstantHam-InstantHamUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstantHam-InstantHamUITests/Pods-InstantHam-InstantHamUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1C294E490B134CA2BB156DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstantHam/Pods-InstantHam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstantHam/Pods-InstantHam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstantHam/Pods-InstantHam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8BBD50323FB314B005ACD8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8BBD50F23FB314B005ACD8A /* ViewController.swift in Sources */,
+				B8BBD50B23FB314B005ACD8A /* AppDelegate.swift in Sources */,
+				B8BBD50D23FB314B005ACD8A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8BBD51923FB317C005ACD8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8BBD52223FB317C005ACD8A /* InstantHamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8BBD52423FB317C005ACD8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8BBD52D23FB317C005ACD8A /* InstantHamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8BBD51F23FB317C005ACD8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8BBD50623FB314B005ACD8A /* InstantHam */;
+			targetProxy = B8BBD51E23FB317C005ACD8A /* PBXContainerItemProxy */;
+		};
+		B8BBD52A23FB317C005ACD8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8BBD50623FB314B005ACD8A /* InstantHam */;
+			targetProxy = B8BBD52923FB317C005ACD8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B8BBD51023FB314B005ACD8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8BBD51123FB314B005ACD8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B8BBD51523FB317A005ACD8A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8BBD51623FB317A005ACD8A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B8BBD52F23FB317C005ACD8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B8BBD53023FB317C005ACD8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8BBD53223FB317C005ACD8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1981DF3B254E9F4B97029973 /* Pods-InstantHam.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9STX7CHW76;
+				INFOPLIST_FILE = InstantHam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emily-Ou.InstantHam";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8BBD53323FB317C005ACD8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B8897D7BC2175D2BD1205A /* Pods-InstantHam.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9STX7CHW76;
+				INFOPLIST_FILE = InstantHam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emily-Ou.InstantHam";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B8BBD53523FB317C005ACD8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AE354033297485AB71542EB /* Pods-InstantHamTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9STX7CHW76;
+				INFOPLIST_FILE = InstantHamTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emily-Ou.InstantHamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstantHam.app/InstantHam";
+			};
+			name = Debug;
+		};
+		B8BBD53623FB317C005ACD8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC8AFA1DEBC1488E024C1B31 /* Pods-InstantHamTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9STX7CHW76;
+				INFOPLIST_FILE = InstantHamTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emily-Ou.InstantHamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstantHam.app/InstantHam";
+			};
+			name = Release;
+		};
+		B8BBD53823FB317C005ACD8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51EB4A16569FD7F3E867BB50 /* Pods-InstantHam-InstantHamUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9STX7CHW76;
+				INFOPLIST_FILE = InstantHamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emily-Ou.InstantHamUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstantHam;
+			};
+			name = Debug;
+		};
+		B8BBD53923FB317C005ACD8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 286DADE322544469B78B7537 /* Pods-InstantHam-InstantHamUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9STX7CHW76;
+				INFOPLIST_FILE = InstantHamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Emily-Ou.InstantHamUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstantHam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8BBD50223FB314B005ACD8A /* Build configuration list for PBXProject "InstantHam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BBD52F23FB317C005ACD8A /* Debug */,
+				B8BBD53023FB317C005ACD8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8BBD53123FB317C005ACD8A /* Build configuration list for PBXNativeTarget "InstantHam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BBD53223FB317C005ACD8A /* Debug */,
+				B8BBD53323FB317C005ACD8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8BBD53423FB317C005ACD8A /* Build configuration list for PBXNativeTarget "InstantHamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BBD53523FB317C005ACD8A /* Debug */,
+				B8BBD53623FB317C005ACD8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8BBD53723FB317C005ACD8A /* Build configuration list for PBXNativeTarget "InstantHamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BBD53823FB317C005ACD8A /* Debug */,
+				B8BBD53923FB317C005ACD8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8BBD4FF23FB314B005ACD8A /* Project object */;
+}
