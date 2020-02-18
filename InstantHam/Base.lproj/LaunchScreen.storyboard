@@ -16,27 +16,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InstantHam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKj-sk-RQw">
-                                <rect key="frame" x="100" y="427" width="175" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="kM6-SC-hZV"/>
-                                </constraints>
+                                <rect key="frame" x="100.66666666666667" y="427" width="173.66666666666663" height="35"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ham_image" translatesAutoresizingMaskIntoConstraints="NO" id="yfh-RM-a6z">
-                                <rect key="frame" x="76" y="236" width="223" height="183"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ham_image-2" translatesAutoresizingMaskIntoConstraints="NO" id="ApI-hi-4aQ">
+                                <rect key="frame" x="114" y="292" width="147" height="142"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="FKj-sk-RQw" firstAttribute="top" secondItem="yfh-RM-a6z" secondAttribute="bottom" constant="8.0000000000000568" id="Ewq-dO-5Gy"/>
-                            <constraint firstItem="yfh-RM-a6z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="192" id="GSP-K3-oHF"/>
-                            <constraint firstItem="FKj-sk-RQw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Wgp-zu-B7q"/>
-                            <constraint firstItem="yfh-RM-a6z" firstAttribute="centerX" secondItem="FKj-sk-RQw" secondAttribute="centerX" id="cKB-vg-yDq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FKj-sk-RQw" secondAttribute="bottom" constant="316" id="l2m-at-die"/>
-                            <constraint firstItem="FKj-sk-RQw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="rSj-XE-2E3"/>
-                            <constraint firstItem="yfh-RM-a6z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="rYm-sL-VqR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ApI-hi-4aQ" secondAttribute="bottom" constant="344.00000000000006" id="17Y-tO-EXi"/>
+                            <constraint firstItem="ApI-hi-4aQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Bab-7X-aoo"/>
+                            <constraint firstItem="FKj-sk-RQw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100.66666666666669" id="CFD-RP-sAz"/>
+                            <constraint firstItem="FKj-sk-RQw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="383" id="Jiz-id-AnE"/>
+                            <constraint firstItem="ApI-hi-4aQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="Pdh-mB-vWd"/>
+                            <constraint firstItem="ApI-hi-4aQ" firstAttribute="centerX" secondItem="FKj-sk-RQw" secondAttribute="centerX" id="k8T-O6-BHC"/>
+                            <constraint firstItem="ApI-hi-4aQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="248" id="qQN-8r-gWW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -47,6 +44,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ham_image" width="245" height="197"/>
+        <image name="ham_image-2" width="245" height="197"/>
     </resources>
 </document>
