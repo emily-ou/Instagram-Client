@@ -24,19 +24,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ham_image" translatesAutoresizingMaskIntoConstraints="NO" id="NjG-iI-bkx">
-                                <rect key="frame" x="76" y="235" width="223" height="184"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ham_image" translatesAutoresizingMaskIntoConstraints="NO" id="yfh-RM-a6z">
+                                <rect key="frame" x="76" y="236" width="223" height="183"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="NjG-iI-bkx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="191" id="6oN-ZZ-doP"/>
-                            <constraint firstItem="NjG-iI-bkx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="EMg-gg-Jk5"/>
-                            <constraint firstItem="NjG-iI-bkx" firstAttribute="centerX" secondItem="FKj-sk-RQw" secondAttribute="centerX" id="UTY-Fj-tgi"/>
-                            <constraint firstItem="NjG-iI-bkx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Vri-hX-yF5"/>
-                            <constraint firstItem="FKj-sk-RQw" firstAttribute="top" secondItem="NjG-iI-bkx" secondAttribute="bottom" constant="8" id="gRS-NV-XTY"/>
+                            <constraint firstItem="FKj-sk-RQw" firstAttribute="top" secondItem="yfh-RM-a6z" secondAttribute="bottom" constant="8.0000000000000568" id="Ewq-dO-5Gy"/>
+                            <constraint firstItem="yfh-RM-a6z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="192" id="GSP-K3-oHF"/>
+                            <constraint firstItem="FKj-sk-RQw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Wgp-zu-B7q"/>
+                            <constraint firstItem="yfh-RM-a6z" firstAttribute="centerX" secondItem="FKj-sk-RQw" secondAttribute="centerX" id="cKB-vg-yDq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FKj-sk-RQw" secondAttribute="bottom" constant="316" id="l2m-at-die"/>
                             <constraint firstItem="FKj-sk-RQw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="rSj-XE-2E3"/>
+                            <constraint firstItem="yfh-RM-a6z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="rYm-sL-VqR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -47,6 +47,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ham_image" width="254" height="217"/>
+        <image name="ham_image" width="245" height="197"/>
     </resources>
 </document>
