@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,12 +11,13 @@
 		99CA13A22434895430353D94 /* Pods_InstantHam_InstantHamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02EEBA941AA86E062AA328A /* Pods_InstantHam_InstantHamUITests.framework */; };
 		B8BBD50B23FB314B005ACD8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBD50A23FB314B005ACD8A /* AppDelegate.swift */; };
 		B8BBD50D23FB314B005ACD8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBD50C23FB314B005ACD8A /* SceneDelegate.swift */; };
-		B8BBD50F23FB314B005ACD8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBD50E23FB314B005ACD8A /* ViewController.swift */; };
 		B8BBD51223FB314B005ACD8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8BBD51023FB314B005ACD8A /* Main.storyboard */; };
 		B8BBD51423FB317A005ACD8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BBD51323FB317A005ACD8A /* Assets.xcassets */; };
 		B8BBD51723FB317A005ACD8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8BBD51523FB317A005ACD8A /* LaunchScreen.storyboard */; };
 		B8BBD52223FB317C005ACD8A /* InstantHamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBD52123FB317C005ACD8A /* InstantHamTests.swift */; };
 		B8BBD52D23FB317C005ACD8A /* InstantHamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBD52C23FB317C005ACD8A /* InstantHamUITests.swift */; };
+		B8BBD53B23FB584B005ACD8A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBD53A23FB584B005ACD8A /* LoginViewController.swift */; };
+		B8BBD53D23FB5863005ACD8A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBD53C23FB5863005ACD8A /* FeedViewController.swift */; };
 		DE57EA36ABB6BD8604489380 /* Pods_InstantHam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BD94C42DA457AF731F4EB6 /* Pods_InstantHam.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +48,6 @@
 		B8BBD50723FB314B005ACD8A /* InstantHam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstantHam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8BBD50A23FB314B005ACD8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8BBD50C23FB314B005ACD8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B8BBD50E23FB314B005ACD8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B8BBD51123FB314B005ACD8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8BBD51323FB317A005ACD8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8BBD51623FB317A005ACD8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +58,8 @@
 		B8BBD52823FB317C005ACD8A /* InstantHamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantHamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8BBD52C23FB317C005ACD8A /* InstantHamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantHamUITests.swift; sourceTree = "<group>"; };
 		B8BBD52E23FB317C005ACD8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8BBD53A23FB584B005ACD8A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B8BBD53C23FB5863005ACD8A /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		C02EEBA941AA86E062AA328A /* Pods_InstantHam_InstantHamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstantHam_InstantHamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BD94C42DA457AF731F4EB6 /* Pods_InstantHam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstantHam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC8AFA1DEBC1488E024C1B31 /* Pods-InstantHamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantHamTests.release.xcconfig"; path = "Target Support Files/Pods-InstantHamTests/Pods-InstantHamTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +103,6 @@
 				5AE354033297485AB71542EB /* Pods-InstantHamTests.debug.xcconfig */,
 				FC8AFA1DEBC1488E024C1B31 /* Pods-InstantHamTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -132,11 +133,12 @@
 			children = (
 				B8BBD50A23FB314B005ACD8A /* AppDelegate.swift */,
 				B8BBD50C23FB314B005ACD8A /* SceneDelegate.swift */,
-				B8BBD50E23FB314B005ACD8A /* ViewController.swift */,
 				B8BBD51023FB314B005ACD8A /* Main.storyboard */,
 				B8BBD51323FB317A005ACD8A /* Assets.xcassets */,
 				B8BBD51523FB317A005ACD8A /* LaunchScreen.storyboard */,
 				B8BBD51823FB317A005ACD8A /* Info.plist */,
+				B8BBD53A23FB584B005ACD8A /* LoginViewController.swift */,
+				B8BBD53C23FB5863005ACD8A /* FeedViewController.swift */,
 			);
 			path = InstantHam;
 			sourceTree = "<group>";
@@ -408,8 +410,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8BBD50F23FB314B005ACD8A /* ViewController.swift in Sources */,
+				B8BBD53B23FB584B005ACD8A /* LoginViewController.swift in Sources */,
 				B8BBD50B23FB314B005ACD8A /* AppDelegate.swift in Sources */,
+				B8BBD53D23FB5863005ACD8A /* FeedViewController.swift in Sources */,
 				B8BBD50D23FB314B005ACD8A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
