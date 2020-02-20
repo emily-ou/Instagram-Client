@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.initialize(
             with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
                 configuration.applicationId = "InstantHam"
-                configuration.server = "https://infinite-bayou-26222.herokuapp.com"
+                configuration.server = "https://infinite-bayou-26222.herokuapp.com/parse"
             })
         )
         

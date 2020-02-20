@@ -18,6 +18,8 @@
 		B8BBD52D23FB317C005ACD8A /* InstantHamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBD52C23FB317C005ACD8A /* InstantHamUITests.swift */; };
 		B8BBD53B23FB584B005ACD8A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBD53A23FB584B005ACD8A /* LoginViewController.swift */; };
 		B8BBD53D23FB5863005ACD8A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBD53C23FB5863005ACD8A /* FeedViewController.swift */; };
+		B8BBD53F23FBA4C7005ACD8A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBD53E23FBA4C7005ACD8A /* CameraViewController.swift */; };
+		B8F642B123FDF35500BCD144 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F642B023FDF35500BCD144 /* PostCell.swift */; };
 		DE57EA36ABB6BD8604489380 /* Pods_InstantHam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BD94C42DA457AF731F4EB6 /* Pods_InstantHam.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		B8BBD52E23FB317C005ACD8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8BBD53A23FB584B005ACD8A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B8BBD53C23FB5863005ACD8A /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		B8BBD53E23FBA4C7005ACD8A /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		B8F642B023FDF35500BCD144 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		C02EEBA941AA86E062AA328A /* Pods_InstantHam_InstantHamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstantHam_InstantHamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BD94C42DA457AF731F4EB6 /* Pods_InstantHam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstantHam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC8AFA1DEBC1488E024C1B31 /* Pods-InstantHamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstantHamTests.release.xcconfig"; path = "Target Support Files/Pods-InstantHamTests/Pods-InstantHamTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 				B8BBD51823FB317A005ACD8A /* Info.plist */,
 				B8BBD53A23FB584B005ACD8A /* LoginViewController.swift */,
 				B8BBD53C23FB5863005ACD8A /* FeedViewController.swift */,
+				B8BBD53E23FBA4C7005ACD8A /* CameraViewController.swift */,
+				B8F642B023FDF35500BCD144 /* PostCell.swift */,
 			);
 			path = InstantHam;
 			sourceTree = "<group>";
@@ -411,9 +417,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8BBD53B23FB584B005ACD8A /* LoginViewController.swift in Sources */,
+				B8BBD53F23FBA4C7005ACD8A /* CameraViewController.swift in Sources */,
 				B8BBD50B23FB314B005ACD8A /* AppDelegate.swift in Sources */,
 				B8BBD53D23FB5863005ACD8A /* FeedViewController.swift in Sources */,
 				B8BBD50D23FB314B005ACD8A /* SceneDelegate.swift in Sources */,
+				B8F642B123FDF35500BCD144 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

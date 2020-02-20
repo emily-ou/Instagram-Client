@@ -23,7 +23,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             if user != nil {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
-                print("Error: \(Error?.localizedDescription)")
+                print("Sign In Error: \(Error?.localizedDescription)")
             }
         }
     }
@@ -35,11 +35,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         user.password = passwordField.text
         
         // if sign up is successful else
-        user.signUpInBackground { (success, Error) in
+        user.signUpInBackground { (success, error) in
             if success {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
-                print("Error: \(Error?.localizedDescription)")
+                print("Sign Up Error: \(error?.localizedDescription)")
             }
         }
     }
@@ -53,10 +53,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField == usernameField {
-            textField.text = ""
+            //textField.text = ""
+            usernameField.textColor = UIColor.black
         }
         else if textField == passwordField {
-            textField.text = ""
+            //textField.text = ""
+            passwordField.textColor = UIColor.black
         }
     }
 
