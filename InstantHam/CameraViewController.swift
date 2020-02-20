@@ -24,7 +24,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         // Get image data
         let imageData = imageView.image!.pngData()
-        let file = PFFileObject(data: imageData!)
+        let file = PFFileObject(name: "image.png", data: imageData!)
         
         post["image"] = file
         
@@ -51,6 +51,11 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         }
         
         present(picker, animated: true, completion: nil)
+    }
+    
+    // Cancel button is triggered
+    @IBAction func cancelButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     // Load image

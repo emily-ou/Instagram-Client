@@ -48,6 +48,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
     }
     
+    // stay logged in
+    override func viewDidAppear(_ animated: Bool) {
+        let currentUser = PFUser.current()
+        if currentUser != nil {
+            self.performSegue(withIdentifier: "loginSegue", sender: nil)
+        } else {
+            print("Not Current User")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
