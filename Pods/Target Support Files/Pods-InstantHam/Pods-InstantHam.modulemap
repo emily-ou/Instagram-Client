@@ -1,4 +1,4 @@
-framework module Pods_InstantHam {
+module Pods_InstantHam {
   umbrella header "Pods-InstantHam-umbrella.h"
 
   export *

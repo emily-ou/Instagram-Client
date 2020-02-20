@@ -58,6 +58,7 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="MH5-Zb-aHg" firstAttribute="trailing" secondItem="p51-ew-wku" secondAttribute="trailing" id="0jR-ik-zcp"/>
                             <constraint firstItem="MH5-Zb-aHg" firstAttribute="leading" secondItem="MLD-yY-XjQ" secondAttribute="leading" id="1qF-Io-V2x"/>
@@ -81,6 +82,9 @@
                             <constraint firstItem="XOY-mh-M8J" firstAttribute="leading" secondItem="MH5-Zb-aHg" secondAttribute="leading" id="ztD-Xu-IfW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="OVP-hl-OAF" appends="YES" id="c1t-Oz-BxG"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="passwordField" destination="MH5-Zb-aHg" id="ieF-9D-2dd"/>
@@ -89,6 +93,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="OVP-hl-OAF">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="B01-az-eg8"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="95.320197044334975"/>
         </scene>
@@ -120,7 +129,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMF-ye-v0p">
-                                                    <rect key="frame" x="8" y="485.66666666666663" width="359" height="20.333333333333332"/>
+                                                    <rect key="frame" x="8" y="422" width="359" height="84"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -129,6 +138,7 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ueQ-Dv-7SU">
                                                     <rect key="frame" x="8" y="48" width="359" height="366"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.17904728650000001" green="0.61888003349999998" blue="0.97623795270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -167,7 +177,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Caption" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ez-9E-kfM">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ez-9E-kfM">
                                 <rect key="frame" x="16" y="443" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -192,6 +202,7 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="CDW-xG-bMA" firstAttribute="trailing" secondItem="8Ez-9E-kfM" secondAttribute="trailing" constant="16" id="5MX-6v-EKR"/>
                             <constraint firstItem="CDW-xG-bMA" firstAttribute="trailing" secondItem="lfq-1a-pZW" secondAttribute="trailing" constant="16" id="7VA-Tp-cK0"/>
@@ -204,6 +215,9 @@
                             <constraint firstItem="8Ez-9E-kfM" firstAttribute="top" secondItem="IAJ-CR-mgI" secondAttribute="bottom" constant="8" id="tnw-UB-U9m"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CDW-xG-bMA"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="yt8-4a-4MG" appends="YES" id="qro-Ki-CK2"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="captionField" destination="8Ez-9E-kfM" id="DTq-ug-EH8"/>
@@ -214,6 +228,11 @@
                 <tapGestureRecognizer id="xfc-FG-rl1">
                     <connections>
                         <action selector="onCameraButton:" destination="Rxf-cF-5MD" id="b6u-aL-xaC"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="yt8-4a-4MG">
+                    <connections>
+                        <action selector="onTap:" destination="Rxf-cF-5MD" id="tu1-ga-4XV"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

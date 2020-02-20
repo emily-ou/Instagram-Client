@@ -44,22 +44,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    @IBAction func onTap(_ sender: Any) {
+        view.endEditing(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         usernameField.delegate = self
         passwordField.delegate = self
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        if textField == usernameField {
-            //textField.text = ""
-            usernameField.textColor = UIColor.black
-        }
-        else if textField == passwordField {
-            //textField.text = ""
-            passwordField.textColor = UIColor.black
-        }
     }
 
     /*
