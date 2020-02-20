@@ -23,6 +23,6 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/RBfWTGe.gif[/img]' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
-[InstantHam2](https://i.imgur.com/RBfWTGe.gifv)
+<img src='https://media3.giphy.com/media/SwTN9HEkt9wGewOrMw/giphy.gif?cid=4d1e4f2916d5c846d0482d426a5970aa26b5247566d880d6&rid=giphy.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
 
+Full gif: https://i.imgur.com/RBfWTGe.gif
