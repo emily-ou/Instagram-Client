@@ -40,7 +40,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let imageFile = post["image"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
-        print(url)
         
         // Post image
         cell.photoView.af_setImage(withURL: url)
@@ -53,6 +52,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
         // Query posts
         let query = PFQuery(className: "Posts")
+        // order by newest first
+        query.order(byDescending: "createdAt")
         query.includeKey("author")
         query.limit = 20
         
@@ -70,6 +71,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.allowsSelection = false
     }
     
 

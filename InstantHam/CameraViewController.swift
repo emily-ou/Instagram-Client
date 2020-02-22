@@ -11,7 +11,8 @@ import AlamofireImage
 import Parse
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+    
+    @IBOutlet weak var submit_button: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var captionField: UITextField!
     
@@ -42,7 +43,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.allowsEditing = true
-        
+
         // If camera is available (simulator check)
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             picker.sourceType = .camera
@@ -56,6 +57,26 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     // Cancel button is triggered
     @IBAction func cancelButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+
+    // Camera Button is triggered
+    @IBAction func onCamera(_ sender: Any) {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        picker.sourceType = .camera
+
+        present(picker, animated: true, completion: nil)
+    }
+    
+    // Library function is triggere
+    @IBAction func onLibrary(_ sender: Any) {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        picker.sourceType = .photoLibrary
+
+        present(picker, animated: true, completion: nil)
     }
     
     // Load image
@@ -82,7 +103,15 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
 
         // Do any additional setup after loading the view.
     }
-    
+
+//    override func viewDidAppear(_ animated: Bool) {
+//        print("Image:  \(String(describing: imageView.image))")
+//        if imageView.image == UIImage(named: "image_placeholder") {
+//            submit_button.isEnabled = false
+//        } else {
+//            submit_button.isEnabled = true
+//        }
+//    }
 
     /*
     // MARK: - Navigation

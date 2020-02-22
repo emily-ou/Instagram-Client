@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ham_image-2" translatesAutoresizingMaskIntoConstraints="NO" id="mXg-qh-FcX">
-                                <rect key="frame" x="118" y="226.99999999999997" width="139" height="122.00000000000009"/>
+                                <rect key="frame" x="118" y="227" width="139" height="122"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -140,7 +140,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ueQ-Dv-7SU">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ueQ-Dv-7SU">
                                                     <rect key="frame" x="8" y="40" width="359" height="373"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="359" id="d8e-Pd-0vp"/>
@@ -201,12 +201,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ez-9E-kfM">
-                                <rect key="frame" x="16" y="443" width="343" height="34"/>
+                                <rect key="frame" x="16" y="435" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfq-1a-pZW">
-                                <rect key="frame" x="310" y="485" width="49" height="30"/>
+                                <rect key="frame" x="310" y="477" width="49" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="3wq-Pr-jJr"/>
                                     <constraint firstAttribute="height" constant="30" id="ok5-yV-qeV"/>
@@ -216,18 +216,41 @@
                                     <action selector="submitButton:" destination="Rxf-cF-5MD" eventType="touchUpInside" id="Aph-6h-NCp"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="IAJ-CR-mgI">
-                                <rect key="frame" x="16" y="60" width="343" height="375"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="IAJ-CR-mgI">
+                                <rect key="frame" x="8" y="52" width="359" height="375"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="xfc-FG-rl1" appends="YES" id="cCz-33-RHF"/>
+                                    <outletCollection property="gestureRecognizers" destination="xfc-FG-rl1" appends="YES" id="ESu-gH-rC9"/>
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeP-Aw-LjG">
-                                <rect key="frame" x="16" y="485" width="48" height="30"/>
+                                <rect key="frame" x="16" y="477" width="48" height="30"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="cancelButton:" destination="Rxf-cF-5MD" eventType="touchUpInside" id="oTE-iH-pxc"/>
+                                </connections>
+                            </button>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9pd-bg-Ca9">
+                                <rect key="frame" x="0.0" y="739" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Camera" image="camera" catalog="system" id="tpq-l8-zNL"/>
+                                    <tabBarItem title="Liibrary" image="photo" catalog="system" id="kmb-qp-mAw"/>
+                                </items>
+                            </tabBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YQ-F6-bUP">
+                                <rect key="frame" x="61" y="739" width="68" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onCamera:" destination="Rxf-cF-5MD" eventType="touchUpInside" id="x2s-TR-ZSY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32m-6V-U3G">
+                                <rect key="frame" x="245" y="739" width="68" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onLibrary:" destination="Rxf-cF-5MD" eventType="touchUpInside" id="HgF-hw-ltb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -238,9 +261,9 @@
                             <constraint firstItem="CDW-xG-bMA" firstAttribute="trailing" secondItem="lfq-1a-pZW" secondAttribute="trailing" constant="16" id="7VA-Tp-cK0"/>
                             <constraint firstItem="lfq-1a-pZW" firstAttribute="top" secondItem="8Ez-9E-kfM" secondAttribute="bottom" constant="8" id="CbQ-iR-lE5"/>
                             <constraint firstItem="lfq-1a-pZW" firstAttribute="top" secondItem="8Ez-9E-kfM" secondAttribute="bottom" constant="8" id="QoI-dg-xNz"/>
-                            <constraint firstItem="IAJ-CR-mgI" firstAttribute="top" secondItem="CDW-xG-bMA" secondAttribute="top" constant="16" id="Yu0-Ra-GKU"/>
-                            <constraint firstItem="IAJ-CR-mgI" firstAttribute="leading" secondItem="CDW-xG-bMA" secondAttribute="leading" constant="16" id="Z4A-zX-Wie"/>
-                            <constraint firstItem="CDW-xG-bMA" firstAttribute="trailing" secondItem="IAJ-CR-mgI" secondAttribute="trailing" constant="16" id="dX2-wB-JSn"/>
+                            <constraint firstItem="IAJ-CR-mgI" firstAttribute="top" secondItem="CDW-xG-bMA" secondAttribute="top" constant="8" id="Yu0-Ra-GKU"/>
+                            <constraint firstItem="IAJ-CR-mgI" firstAttribute="leading" secondItem="CDW-xG-bMA" secondAttribute="leading" constant="8" id="Z4A-zX-Wie"/>
+                            <constraint firstItem="CDW-xG-bMA" firstAttribute="trailing" secondItem="IAJ-CR-mgI" secondAttribute="trailing" constant="8" id="dX2-wB-JSn"/>
                             <constraint firstItem="OeP-Aw-LjG" firstAttribute="baseline" secondItem="lfq-1a-pZW" secondAttribute="baseline" id="goR-8B-Lx1"/>
                             <constraint firstItem="8Ez-9E-kfM" firstAttribute="leading" secondItem="CDW-xG-bMA" secondAttribute="leading" constant="16" id="kST-1X-Gee"/>
                             <constraint firstItem="OeP-Aw-LjG" firstAttribute="leading" secondItem="8Ez-9E-kfM" secondAttribute="leading" id="rng-D4-d5Q"/>
@@ -254,12 +277,13 @@
                     <connections>
                         <outlet property="captionField" destination="8Ez-9E-kfM" id="DTq-ug-EH8"/>
                         <outlet property="imageView" destination="IAJ-CR-mgI" id="Cgv-nZ-jzz"/>
+                        <outlet property="submit_button" destination="lfq-1a-pZW" id="NLo-p7-JDp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPn-MY-jNA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="xfc-FG-rl1">
                     <connections>
-                        <action selector="onCameraButton:" destination="Rxf-cF-5MD" id="b6u-aL-xaC"/>
+                        <action selector="onCameraButton:" destination="Rxf-cF-5MD" id="6xr-PY-W9g"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="yt8-4a-4MG">
@@ -290,8 +314,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera" catalog="system" width="64" height="48"/>
         <image name="ham_image-2" width="245" height="197"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="insta_camera_btn" width="25" height="25"/>
+        <image name="photo" catalog="system" width="64" height="46"/>
     </resources>
 </document>
