@@ -12,17 +12,21 @@ The following **required** functionality is completed:
 - [x] User can sign up to create a new account. (1pt)
 - [x] User can log in. (1pt)
 - [x] User can take a photo, add a caption, and post it to the server. (3pt)
-- [x] User can view the last 20 posts. (4pts)
+- [x] User can view the last 5 posts. (4pts) <-- changed this to 5 to show load infinitely user story
 
 The following **bonus** features are implemented:
 
-- [ ] User can pull to refresh. (1pt)
-- [ ] User can load past tweets infinitely. (2pts)
+- [x] User can pull to refresh. (1pt)
+- [x] User can load past tweets infinitely. (2pts)
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://media3.giphy.com/media/SwTN9HEkt9wGewOrMw/giphy.gif?cid=4d1e4f2916d5c846d0482d426a5970aa26b5247566d880d6&rid=giphy.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
+<img src='https://media0.giphy.com/media/lQUy8sJwjLXUyHtAEV/giphy.gif?cid=4d1e4f29a294db773eb966aedf560d0e55cad1388a3dcc69&rid=giphy.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
 
-Full gif: https://i.imgur.com/RBfWTGe.gif
+Full gif: https://i.imgur.com/TfDyiB6.gif
+
+## Notes
+
+- In the gif, the long pause near the end is because I am deleting a post from the Parse dashboard to show the refresh user story 
