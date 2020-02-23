@@ -14,13 +14,15 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tableView: UITableView!
     
-    // Logout button is triggere
+    var posts = [PFObject]()
+    var numOfPosts: Int = 5
+    let refresh_Control = UIRefreshControl()
+    
+    // Logout button is triggered
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
         self.dismiss(animated: true, completion: nil)
     }
-    
-    var posts = [PFObject]()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
@@ -47,6 +49,40 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    // Load posts
+    @objc func loadPosts() {
+        // Query posts
+        let query = PFQuery(className: "Posts")
+        // order by newest first
+        query.order(byDescending: "createdAt")
+        query.includeKey("author")
+        query.limit = numOfPosts
+        
+        self.posts.removeAll()
+        // Post the posts
+        query.findObjectsInBackground { (posts, error) in
+            if posts != nil {
+                self.posts = posts!
+                self.tableView.reloadData()
+                self.refresh_Control.endRefreshing()
+            }
+        }
+    }
+    
+    // Add two posts whenever retrieving old posts
+    func getOldPosts() {
+        numOfPosts += 2
+        loadPosts()
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row + 1 == numOfPosts {
+            print("Num of posts: \(numOfPosts)")
+            getOldPosts()
+            print("Num of posts: \(numOfPosts)")
+        }
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     
@@ -55,8 +91,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         // order by newest first
         query.order(byDescending: "createdAt")
         query.includeKey("author")
-        query.limit = 20
+        query.limit = numOfPosts
         
+        self.posts.removeAll()
         // Post the posts
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {
@@ -72,7 +109,19 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         
+        // Disallow cell selection
         tableView.allowsSelection = false
+        
+        // Cell height
+        tableView.estimatedRowHeight = 450
+        tableView.rowHeight = UITableView.automaticDimension
+        
+        // Get and load posts
+        loadPosts()
+        
+        // Refresh page
+        refresh_Control.addTarget(self, action: #selector(loadPosts), for: .valueChanged)
+        tableView.refreshControl = refresh_Control
     }
     
 

@@ -101,17 +101,12 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        print(imageView.image!)
+        if imageView.image == UIImage(named: "image_placeholder") {
+            submit_button.isEnabled = false
+        }
     }
 
-//    override func viewDidAppear(_ animated: Bool) {
-//        print("Image:  \(String(describing: imageView.image))")
-//        if imageView.image == UIImage(named: "image_placeholder") {
-//            submit_button.isEnabled = false
-//        } else {
-//            submit_button.isEnabled = true
-//        }
-//    }
 
     /*
     // MARK: - Navigation
