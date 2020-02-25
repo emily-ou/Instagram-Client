@@ -11,7 +11,7 @@ import Parse
 import AlamofireImage
 import MessageInputBar
 
-class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MessageInputBarDelegate {
+class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MessageInputBarDelegate, UIWindowSceneDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -28,7 +28,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let main = UIStoryboard(name: "Main", bundle: nil)
         let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
         
-        let delegate = UIApplication.shared.delegate as! AppDelegate
+        let delegate = self.view.window?.windowScene?.delegate as! SceneDelegate
         delegate.window?.rootViewController = loginViewController
     }
     
@@ -93,8 +93,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             let comment = comments[indexPath.row - 1]
             cell.commentLabel.text = comment["text"] as? String
             
-            _ = comment["author"] as? PFUser
-            cell.usernameLabel.text = comment["user"] as? String
+            let user = comment["author"] as? PFUser
+            cell.usernameLabel.text = user?.username
             
             return cell
         } else {
