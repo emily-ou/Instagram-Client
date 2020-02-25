@@ -86,9 +86,11 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         // Resize
         let size = CGSize(width: 300, height: 300)
-        let scaledImage = image.af_imageScaled(to: size)
+        let scaledImage = image.af_imageAspectScaled(toFill: size)
         imageView.image = scaledImage
         
+        // Enable submit button after photo has been loaded
+        submit_button.isEnabled = true
         // Dismiss camera view
         dismiss(animated: true, completion: nil)
         
@@ -101,10 +103,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(imageView.image!)
-        if imageView.image == UIImage(named: "image_placeholder") {
-            submit_button.isEnabled = false
-        }
+        submit_button.isEnabled = false
     }
 
 

@@ -9,6 +9,7 @@ target 'InstantHam' do
   # Pods for InstantHam
   pod "Parse"
   pod "AlamofireImage"
+  pod "MessageInputBar"
 
   target 'InstantHamTests' do
     inherit! :search_paths
