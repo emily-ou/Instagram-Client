@@ -28,7 +28,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let main = UIStoryboard(name: "Main", bundle: nil)
         let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
         
-        let delegate = UIApplication.shared.delegate as! SceneDelegate
+        let delegate = UIApplication.shared.delegate as! AppDelegate
         delegate.window?.rootViewController = loginViewController
     }
     
@@ -110,7 +110,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let query = PFQuery(className: "Posts")
         // order by newest first
         query.order(byDescending: "createdAt")
-        query.includeKey("author")
+        query.includeKeys(["author", "comments", "comments.author"])
         query.limit = numOfPosts
         
         self.posts.removeAll()
@@ -147,12 +147,13 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
         let comment = PFObject(className: "Comments")
         
-        
+        commentBar.inputTextView.textColor = UIColor.gray
         // Create a comment
         // Set the fields
-        //comment["text"] = text
+        comment["text"] = text
         comment["post"] = selectedPost
         comment["author"] = PFUser.current()!
+        print(PFUser.current()!)
         
         selectedPost.add(comment, forKey: "comments")
         
@@ -176,21 +177,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     
-        // Query posts
-        let query = PFQuery(className: "Posts")
-        // order by newest first
-        query.order(byDescending: "createdAt")
-        query.includeKeys(["author", "comments", "comments.author"])
-        query.limit = numOfPosts
-        
-        self.posts.removeAll()
-        // Post the posts
-        query.findObjectsInBackground { (posts, error) in
-            if posts != nil {
-                self.posts = posts!
-                self.tableView.reloadData()
-            }
-        }
+        // Get post
+        loadPosts()
     }
     
     override func viewDidLoad() {
