@@ -131,10 +131,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row + 1 == numOfPosts {
-            print("Num of posts: \(numOfPosts)")
+        if indexPath.section + 1 == numOfPosts {
             getOldPosts()
-            print("Num of posts: \(numOfPosts)")
         }
     }
     
@@ -188,8 +186,18 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         commentBar.sendButton.title = "Post"
         commentBar.delegate = self
         
+        // support dark and light mode for inputTextView
+        if #available(iOS 13.0, *) {
+            commentBar.inputTextView.textColor = .label
+            commentBar.inputTextView.placeholderLabel.textColor = .secondaryLabel
+            commentBar.backgroundView.backgroundColor = .systemBackground
+        }
+        
         tableView.delegate = self
         tableView.dataSource = self
+        
+        // Get rid of cell line seperators
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         
         // Dismiss comment keyboard
         tableView.keyboardDismissMode = .interactive
@@ -202,12 +210,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.estimatedRowHeight = 450
         tableView.rowHeight = UITableView.automaticDimension
         
-        // Get and load posts
-        loadPosts()
-        
         // Refresh page
         refresh_Control.addTarget(self, action: #selector(loadPosts), for: .valueChanged)
         tableView.refreshControl = refresh_Control
+        
+        // Get and load posts
+        loadPosts()
     }
     
 
